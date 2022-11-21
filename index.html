@@ -22,9 +22,20 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="https://docs.google.com/forms/d/12wEf0GsrNlNfMrGfp5mu-b_BaVZFCmHX9ei-lKTdsME/viewform?edit_requested=true">Google 表單</a>
-						</li>
+					<li><a href="#one" onclick="javascript:return tone()">Google 表單/sheet</a></li>
+					<li><a href="#two" onclick="javascript:return totwo()">婚禮地點/Location</a></li>
+					<li><a href="#three" onclick="javascript:return tothree()">Gallery</a></li>
+				<script>
+					function tone(){
+						$("html,body").animate({scrollTop:$('#one').offset().top}, 800);
+					}
+					function totwo(){
+						$("html,body").animate({scrollTop:$('#two').offset().top}, 800);
+					}
+					function tothree(){
+						$("html,body").animate({scrollTop:$('#three').offset().top}, 800);
+					}
+				</script>
 				</ul>
 			</nav>
 
@@ -52,10 +63,9 @@
 				</article>
 			</section>
 			<center>
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQMEOIJ8GTwvFMA9fEx_gB1yTkdsFplSzJJashry_ni1VvWA/viewform?embedded=true" width="100%" height="3928" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+			<iframe id='one' src="https://docs.google.com/forms/d/e/1FAIpQLSfQMEOIJ8GTwvFMA9fEx_gB1yTkdsFplSzJJashry_ni1VvWA/viewform?embedded=true" width="100%" height="3928" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 		    </center>
-			<!-- One -->
-		
+
 			<section id="two" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
